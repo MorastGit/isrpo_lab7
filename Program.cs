@@ -110,60 +110,60 @@
 
 // Итоговая задача
 
-// int[] grades = { 5, 4, 3, 5, 2, 4, 3, 5 };
-// double srednee = 0;
-// int sum = 0;
-// int min = grades[0];
-// int max = grades[0];
-// int count2 = 0;
-// int count5 = 0;
-// for (int i = 0; i < grades.Length; i++)
-// {
-//     sum += grades[i];
-//     if (grades[i] < min)
-//     {
-//         min = grades[i];
-//     }
-//     if (grades[i] > max)
-//     {
-//         max = grades[i];
-//     }
-//     if (grades[i] == 2)
-//     {
-//         count2++;
-//     }
-//     if (grades[i] == 5)
-//     {
-//         count5++;
-//     }
-// }
-// srednee = (double)sum / grades.Length;
-// Console.WriteLine($"Средний балл: {srednee}");
-// if (srednee >= 4.5)
-// {
-//     Console.WriteLine("Отличник");
-// } else if (srednee >= 3.5)
-// {
-//     Console.WriteLine("Хорошист");
-// } else
-// {
-//     Console.WriteLine("Есть над чем поработать");
-// }
-// Console.WriteLine($"Минимальный балл: {min}");
-// Console.WriteLine($"Максимальный балл: {max}");
-// Console.WriteLine($"Количество двоек: {count2}");
-// Console.WriteLine($"Количество пятерок: {count5}");
+int[] grades = { 5, 4, 3, 5, 2, 4, 3, 5 };
+double srednee = 0;
+int sum = 0;
+int min = grades[0];
+int max = grades[0];
+int count2 = 0;
+int count5 = 0;
+for (int i = 0; i < grades.Length; i++)
+{
+    sum += grades[i];
+    if (grades[i] < min)
+    {
+        min = grades[i];
+    }
+    if (grades[i] > max)
+    {
+        max = grades[i];
+    }
+    if (grades[i] == 2)
+    {
+        count2++;
+    }
+    if (grades[i] == 5)
+    {
+        count5++;
+    }
+}
+srednee = (double)sum / grades.Length;
+Console.WriteLine($"Средний балл: {srednee}");
+if (srednee >= 4.5)
+{
+    Console.WriteLine("Отличник");
+} else if (srednee >= 3.5)
+{
+    Console.WriteLine("Хорошист");
+} else
+{
+    Console.WriteLine("Есть над чем поработать");
+}
+Console.WriteLine($"Минимальный балл: {min}");
+Console.WriteLine($"Максимальный балл: {max}");
+Console.WriteLine($"Количество двоек: {count2}");
+Console.WriteLine($"Количество пятерок: {count5}");
 
 // Доп задание
 
-int[] arr = { 1, 2, 3, 4, 5, 6 };
-for (int i = 0; i < arr.Length / 2; i++)
-{
-    int num = arr[i];
-    arr[i] = arr[arr.Length - 1 - i];
-    arr[arr.Length - 1 - i] = num;
-}
-foreach (int b in arr)
-{
-    Console.Write($"{b} ");
-}
+// int[] arr = { 1, 2, 3, 4, 5, 6 };
+// for (int i = 0; i < arr.Length / 2; i++)
+// {
+//     int num = arr[i];
+//     arr[i] = arr[arr.Length - 1 - i];
+//     arr[arr.Length - 1 - i] = num;
+// }
+// foreach (int b in arr)
+// {
+//     Console.Write($"{b} ");
+// }
